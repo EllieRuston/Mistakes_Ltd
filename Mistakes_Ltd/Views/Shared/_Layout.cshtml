@@ -6,10 +6,8 @@
     <title>@ViewData["Title"] - Sounds Like Mr.Mistake</title>
     <link rel="stylesheet" href="~/lib/tailwindcss/tailwind.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Sound.styles.css" asp-append-version="true" />
 </head>
 <body class="bg-gradient-to-t from-black to-purple-500 to-black">
-
 
     <header>
         <nav class="bg-gray-800 z-11">
@@ -39,22 +37,21 @@
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <!--logo-->
                         <div class="flex flex-shrink-0 items-center">
-                            <img class="block h-8 w-auto lg:hidden" src="/images/M.png">
-                            <img class="hidden h-8 w-auto lg:block" src="/images/M.png">
-                            <a class="flex items-center text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                               asp-area="" asp-controller="Albums" asp-action="Index">Mr. Mistake</a>
+							<img class="rounded-full block h-12 w-auto lg:hidden" src="~/images/M.png"/>
+							<img class=" rounded-full hidden h-12 w-auto lg:block" src="~/images/M.png" />
+                           
 
                         </div>
                     </div>
                     <div class="hidden sm:ml-6 sm:block">
-                        <div class="flex space-x-4">
+						<div class="flex space-x-4" style="font-family:Dashhorizon">
                             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 
-                            <a class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                            <a class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-large"
                                asp-area="" asp-controller="Home" asp-action="Albums">Albums</a>
-                            <a class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                            <a class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-large"
                                asp-area="" asp-controller="Home" asp-action="Gigs">Gigs</a>
-                            <a class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                            <a class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-large"
                                asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </div>
                     </div>

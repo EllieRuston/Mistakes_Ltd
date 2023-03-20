@@ -20,3 +20,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+@font-face {
+    font-family: 'dashhorizon';
+    src: url('../fonts/dashhorizon.otf') format('opentype');
+}

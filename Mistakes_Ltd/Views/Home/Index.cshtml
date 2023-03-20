@@ -1,8 +1,34 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Tracks";
 }
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<style>
+    b {
+        color: aliceblue;
+        text-align: start;
+        font-size: 40px;
+        font-family:Dashhorizon;
+    }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    p {
+        font-family: Dashhorizon;
+        color: aliceblue;
+        font-size: 150px;
+        position: absolute;
+        margin-top: 1%;
+        text-align: center;
+    }
+
+    img {
+        max-height: 90%;
+        float: initial;
+    }
+</style>
+<div>
+    <div class="d-flex">
+        <div class="">
+            <p class="Italic text-bold w-full bd-white"><b>Est. 2021<br /></b>Mr Mistake</p>
+        </div>
+        <img class=" rounded-full opacity-25" src="images/cityscape.jpg" />
+    </div>
 </div>

@@ -18,12 +18,17 @@ namespace Mistakes_Ltd.Controllers
 			return View();
 		}
 
-		public IActionResult Privacy()
+		public IActionResult Gigs()
 		{
 			return View();
 		}
+        
+		public IActionResult Albums()
+        {
+            return View();
+        }
 
-		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
 		public IActionResult Error()
 		{
 			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

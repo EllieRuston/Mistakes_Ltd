@@ -1,12 +1,12 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - Mistakes-Ltd
+name: Build and deploy ASP.Net Core app to Azure Web App - mistakes-development
 
 on:
   push:
     branches:
-      - master
+      - development
   workflow_dispatch:
 
 jobs:
@@ -29,6 +29,7 @@ jobs:
   build:
     runs-on: windows-latest
     needs: run-lint
+    
     steps:
       - uses: actions/checkout@v2
 
@@ -49,7 +50,7 @@ jobs:
         with:
           name: .net-app
           path: ${{env.DOTNET_ROOT}}/myapp
-
+    
   deploy:
     runs-on: windows-latest
     needs: build
@@ -67,7 +68,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'Mistakes-Ltd'
+          app-name: 'mistakes-development'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DBE605B065BF4386A9325D7F32DD4F6E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F83E58F598804CD5AB39230448678059 }}
           package: .
